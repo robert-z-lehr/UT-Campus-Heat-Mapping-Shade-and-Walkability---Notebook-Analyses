@@ -1,0 +1,952 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Notebook Visualizations | UT Austin Campus Heat Mapping</title><link rel="stylesheet" href="style.css"><style>figure{margin:24px 0 36px}figure img{width:100%;height:auto;object-fit:contain;background:white;cursor:zoom-in}figcaption{color:#546976;font-size:.94rem;margin-top:8px}.table-scroll{max-height:800px;max-width:100%;overflow:auto;border:1px solid #d8e1e6;border-radius:8px}.table-scroll table{font-size:12px;width:max-content;min-width:100%;border-collapse:separate;border-spacing:0}.table-scroll th,.table-scroll td{white-space:nowrap;border-bottom:1px solid #e1e7eb;padding:6px 10px}.table-scroll td:nth-child(5){white-space:pre-wrap;min-width:350px;max-width:600px}.table-scroll thead th{position:sticky;top:0;z-index:2;background:#eaf2f6}.table-scroll td:first-child{position:sticky;left:0;background:white}.table-scroll th:first-child{position:sticky;left:0;background:#eaf2f6}.table-scroll tbody tr:nth-child(n+48){font-weight:700;background:#eff6fa}.tools{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:15px 0}.tools input{padding:10px;min-width:220px;border:1px solid #abc1ce;border-radius:7px}.jump{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}.jump a{background:#e4edf3;padding:7px 11px;border-radius:6px;text-decoration:none}figure img:hover{outline:2px solid #43758d}</style></head><body><header><small>UT AUSTIN · KESTREL 5400 · FALL 2026</small><h1>Campus Heat Mapping, Shade &amp; Walkability</h1><p>Pedestrian-scale field observations and research analysis</p></header><nav aria-label="Site navigation"><a href="index.html">Notebook &amp; visuals</a><a href="visuals.html" aria-current="page">Plots &amp; tables</a><a href="report.html">Written report</a><a href="map.html">Interactive map</a></nav><main><article><h2>Plots &amp; tables from the executed Jupyter notebook</h2><p>Figures below are retained images of the saved Matplotlib outputs from the uploaded executed notebook, not reconstructed measurements. Click an image to open it at full resolution. Tables are taken from the saved outputs of the notebook.</p><div class="jump"><a href="#session-dots">Session metric distributions</a><a href="#within-session">Within-session line plots</a><a href="#scatterplots">Scatterplots</a><a href="#session-table">47-session table</a><a href="#excluded">Excluded sessions</a></div>
+<section id="session-dots"><h3>Session metric scatterplots (Cell 53)</h3><figure><a href="session-metric-scatter.webp" target="_blank" rel="noopener"><img src="session-metric-scatter.webp" alt="Scatter plots showing measurements for each session across ten environmental metrics" loading="lazy"></a><figcaption>One point per session for each of the ten metrics; overall mean indicated in the original plotted output.</figcaption></figure></section>
+<section id="within-session"><h3>Within-session line plots (Cell 55)</h3><figure><a href="within-session-lineplots.webp" target="_blank" rel="noopener"><img src="within-session-lineplots.webp" alt="Within-session trajectories of Kestrel environmental measurements over elapsed time" loading="lazy"></a><figcaption>Saved notebook plot of readings over elapsed time within sessions, with the original annotation and axes.</figcaption></figure></section>
+<section id="scatterplots"><h3>Globe temperature versus air temperature scatterplots (Cell 57)</h3><figure><a href="globe-vs-air-scatter.webp" target="_blank" rel="noopener"><img src="globe-vs-air-scatter.webp" alt="Globe versus air temperature scatterplots by sensor and combined" loading="lazy"></a><figcaption>Original instrument-specific and combined scatterplot.</figcaption></figure><h3>Three-dimensional scatterplots (Cell 59)</h3><figure><a href="three-dimensional-scatter.webp" target="_blank" rel="noopener"><img src="three-dimensional-scatter.webp" alt="Three-dimensional air temperature, globe temperature and wind speed scatterplots" loading="lazy"></a><figcaption>Original saved 3D Matplotlib output; static on GitHub Pages.</figcaption></figure></section>
+<section id="session-table"><h3>47-session means and five summary rows (Code Cell 47)</h3><p>52 rows × 14 data columns, matching the executed notebook's saved table. Session classifications are provisional. The table scrolls horizontally and vertically.</p><div class="tools"><label for="searchTable">Filter table:</label><input id="searchTable" type="search" placeholder="Search session, notes, sensor…"><span id="rowCount" aria-live="polite">52 rows</span></div><div class="table-scroll" id="sessionTable"><table id="T_166c5">
+<thead>
+<tr>
+<th class="blank level0"> </th>
+<th class="col_heading level0 col0" id="T_166c5_level0_col0">Original Classification</th>
+<th class="col_heading level0 col1" id="T_166c5_level0_col1">Session ID</th>
+<th class="col_heading level0 col2" id="T_166c5_level0_col2">Instrument ID</th>
+<th class="col_heading level0 col3" id="T_166c5_level0_col3">Field Notes</th>
+<th class="col_heading level0 col4" id="T_166c5_level0_col4">Air temperature (°F)</th>
+<th class="col_heading level0 col5" id="T_166c5_level0_col5">Globe temperature (°F)</th>
+<th class="col_heading level0 col6" id="T_166c5_level0_col6">Wet bulb temperature (°F)</th>
+<th class="col_heading level0 col7" id="T_166c5_level0_col7">Wet bulb globe temperature (°F)</th>
+<th class="col_heading level0 col8" id="T_166c5_level0_col8">Relative humidity (%)</th>
+<th class="col_heading level0 col9" id="T_166c5_level0_col9">Wind speed (mph)</th>
+<th class="col_heading level0 col10" id="T_166c5_level0_col10">Heat index (°F)</th>
+<th class="col_heading level0 col11" id="T_166c5_level0_col11">Dew point (°F)</th>
+<th class="col_heading level0 col12" id="T_166c5_level0_col12">Natural wet bulb temperature (°F)</th>
+<th class="col_heading level0 col13" id="T_166c5_level0_col13">Thermal work limit (W/m²)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="row_heading level0 row0" id="T_166c5_level0_row0">0</th>
+<td class="data row0 col0" id="T_166c5_row0_col0">Sun</td>
+<td class="data row0 col1" id="T_166c5_row0_col1">Session - Sep 11, 2026 11:32:13 AM</td>
+<td class="data row0 col2" id="T_166c5_row0_col2">3080887</td>
+<td class="data row0 col3" id="T_166c5_row0_col3">Direct sun, 3 people walked by, then one more, and another one</td>
+<td class="data row0 col4" id="T_166c5_row0_col4">90.85</td>
+<td class="data row0 col5" id="T_166c5_row0_col5">113.35</td>
+<td class="data row0 col6" id="T_166c5_row0_col6">79.84</td>
+<td class="data row0 col7" id="T_166c5_row0_col7">90.96</td>
+<td class="data row0 col8" id="T_166c5_row0_col8">62.47</td>
+<td class="data row0 col9" id="T_166c5_row0_col9">3.45</td>
+<td class="data row0 col10" id="T_166c5_row0_col10">105.20</td>
+<td class="data row0 col11" id="T_166c5_row0_col11">76.23</td>
+<td class="data row0 col12" id="T_166c5_row0_col12">84.75</td>
+<td class="data row0 col13" id="T_166c5_row0_col13">130.93</td>
+</tr>
+<tr>
+<th class="row_heading level0 row1" id="T_166c5_level0_row1">1</th>
+<td class="data row1 col0" id="T_166c5_row1_col0">Sun</td>
+<td class="data row1 col1" id="T_166c5_row1_col1">Session - Sep 11, 2026 12:19:44 PM</td>
+<td class="data row1 col2" id="T_166c5_row1_col2">3080887</td>
+<td class="data row1 col3" id="T_166c5_row1_col3">Direct sun, no one walking by</td>
+<td class="data row1 col4" id="T_166c5_row1_col4">94.74</td>
+<td class="data row1 col5" id="T_166c5_row1_col5">113.46</td>
+<td class="data row1 col6" id="T_166c5_row1_col6">80.17</td>
+<td class="data row1 col7" id="T_166c5_row1_col7">90.49</td>
+<td class="data row1 col8" id="T_166c5_row1_col8">53.91</td>
+<td class="data row1 col9" id="T_166c5_row1_col9">1.98</td>
+<td class="data row1 col10" id="T_166c5_row1_col10">109.90</td>
+<td class="data row1 col11" id="T_166c5_row1_col11">75.39</td>
+<td class="data row1 col12" id="T_166c5_row1_col12">83.66</td>
+<td class="data row1 col13" id="T_166c5_row1_col13">133.06</td>
+</tr>
+<tr>
+<th class="row_heading level0 row2" id="T_166c5_level0_row2">2</th>
+<td class="data row2 col0" id="T_166c5_row2_col0">Sun</td>
+<td class="data row2 col1" id="T_166c5_row2_col1">Session - Sep 14, 2026 10:15:51 AM</td>
+<td class="data row2 col2" id="T_166c5_row2_col2">3080892</td>
+<td class="data row2 col3" id="T_166c5_row2_col3">Sunniest location, least wind out of all 4, light vehicle/foot traffic because of Dean Keaton</td>
+<td class="data row2 col4" id="T_166c5_row2_col4">90.54</td>
+<td class="data row2 col5" id="T_166c5_row2_col5">104.89</td>
+<td class="data row2 col6" id="T_166c5_row2_col6">79.57</td>
+<td class="data row2 col7" id="T_166c5_row2_col7">86.97</td>
+<td class="data row2 col8" id="T_166c5_row2_col8">62.58</td>
+<td class="data row2 col9" id="T_166c5_row2_col9">2.28</td>
+<td class="data row2 col10" id="T_166c5_row2_col10">104.35</td>
+<td class="data row2 col11" id="T_166c5_row2_col11">75.95</td>
+<td class="data row2 col12" id="T_166c5_row2_col12">81.70</td>
+<td class="data row2 col13" id="T_166c5_row2_col13">164.67</td>
+</tr>
+<tr>
+<th class="row_heading level0 row3" id="T_166c5_level0_row3">3</th>
+<td class="data row3 col0" id="T_166c5_row3_col0">Sun</td>
+<td class="data row3 col1" id="T_166c5_row3_col1">Session - Sep 14, 2026 11:34:17 AM</td>
+<td class="data row3 col2" id="T_166c5_row3_col2">3080892</td>
+<td class="data row3 col3" id="T_166c5_row3_col3">Unshaded measurement from bottom left circle zone 13</td>
+<td class="data row3 col4" id="T_166c5_row3_col4">91.14</td>
+<td class="data row3 col5" id="T_166c5_row3_col5">100.29</td>
+<td class="data row3 col6" id="T_166c5_row3_col6">78.18</td>
+<td class="data row3 col7" id="T_166c5_row3_col7">84.66</td>
+<td class="data row3 col8" id="T_166c5_row3_col8">56.79</td>
+<td class="data row3 col9" id="T_166c5_row3_col9">3.19</td>
+<td class="data row3 col10" id="T_166c5_row3_col10">102.81</td>
+<td class="data row3 col11" id="T_166c5_row3_col11">73.65</td>
+<td class="data row3 col12" id="T_166c5_row3_col12">79.50</td>
+<td class="data row3 col13" id="T_166c5_row3_col13">203.13</td>
+</tr>
+<tr>
+<th class="row_heading level0 row4" id="T_166c5_level0_row4">4</th>
+<td class="data row4 col0" id="T_166c5_row4_col0">Sun</td>
+<td class="data row4 col1" id="T_166c5_row4_col1">Session - Sep 14, 2026 3:50:52 PM</td>
+<td class="data row4 col2" id="T_166c5_row4_col2">3080887</td>
+<td class="data row4 col3" id="T_166c5_row4_col3">sunny, students frequently passing, tree cover, cars passing frequently </td>
+<td class="data row4 col4" id="T_166c5_row4_col4">101.62</td>
+<td class="data row4 col5" id="T_166c5_row4_col5">119.02</td>
+<td class="data row4 col6" id="T_166c5_row4_col6">79.10</td>
+<td class="data row4 col7" id="T_166c5_row4_col7">91.58</td>
+<td class="data row4 col8" id="T_166c5_row4_col8">37.85</td>
+<td class="data row4 col9" id="T_166c5_row4_col9">2.35</td>
+<td class="data row4 col10" id="T_166c5_row4_col10">113.98</td>
+<td class="data row4 col11" id="T_166c5_row4_col11">71.11</td>
+<td class="data row4 col12" id="T_166c5_row4_col12">82.63</td>
+<td class="data row4 col13" id="T_166c5_row4_col13">126.27</td>
+</tr>
+<tr>
+<th class="row_heading level0 row5" id="T_166c5_level0_row5">5</th>
+<td class="data row5 col0" id="T_166c5_row5_col0">Sun</td>
+<td class="data row5 col1" id="T_166c5_row5_col1">Session - Sep 15, 2026 10:05:24 AM</td>
+<td class="data row5 col2" id="T_166c5_row5_col2">3080887</td>
+<td class="data row5 col3" id="T_166c5_row5_col3">This was in the sun. </td>
+<td class="data row5 col4" id="T_166c5_row5_col4">86.83</td>
+<td class="data row5 col5" id="T_166c5_row5_col5">102.35</td>
+<td class="data row5 col6" id="T_166c5_row5_col6">77.58</td>
+<td class="data row5 col7" id="T_166c5_row5_col7">85.55</td>
+<td class="data row5 col8" id="T_166c5_row5_col8">66.57</td>
+<td class="data row5 col9" id="T_166c5_row5_col9">4.72</td>
+<td class="data row5 col10" id="T_166c5_row5_col10">97.03</td>
+<td class="data row5 col11" id="T_166c5_row5_col11">74.33</td>
+<td class="data row5 col12" id="T_166c5_row5_col12">80.73</td>
+<td class="data row5 col13" id="T_166c5_row5_col13">195.32</td>
+</tr>
+<tr>
+<th class="row_heading level0 row6" id="T_166c5_level0_row6">6</th>
+<td class="data row6 col0" id="T_166c5_row6_col0">Sun</td>
+<td class="data row6 col1" id="T_166c5_row6_col1">Session - Sep 15, 2026 10:19:26 AM</td>
+<td class="data row6 col2" id="T_166c5_row6_col2">3080887</td>
+<td class="data row6 col3" id="T_166c5_row6_col3">This was in the sun.</td>
+<td class="data row6 col4" id="T_166c5_row6_col4">88.82</td>
+<td class="data row6 col5" id="T_166c5_row6_col5">105.79</td>
+<td class="data row6 col6" id="T_166c5_row6_col6">78.76</td>
+<td class="data row6 col7" id="T_166c5_row6_col7">87.19</td>
+<td class="data row6 col8" id="T_166c5_row6_col8">64.67</td>
+<td class="data row6 col9" id="T_166c5_row6_col9">3.16</td>
+<td class="data row6 col10" id="T_166c5_row6_col10">101.05</td>
+<td class="data row6 col11" id="T_166c5_row6_col11">75.35</td>
+<td class="data row6 col12" id="T_166c5_row6_col12">81.91</td>
+<td class="data row6 col13" id="T_166c5_row6_col13">171.64</td>
+</tr>
+<tr>
+<th class="row_heading level0 row7" id="T_166c5_level0_row7">7</th>
+<td class="data row7 col0" id="T_166c5_row7_col0">Sun</td>
+<td class="data row7 col1" id="T_166c5_row7_col1">Session - Sep 15, 2026 9:46:13 AM</td>
+<td class="data row7 col2" id="T_166c5_row7_col2">3080892</td>
+<td class="data row7 col3" id="T_166c5_row7_col3">In direct sunlight, little to no clouds.</td>
+<td class="data row7 col4" id="T_166c5_row7_col4">87.66</td>
+<td class="data row7 col5" id="T_166c5_row7_col5">101.16</td>
+<td class="data row7 col6" id="T_166c5_row7_col6">78.74</td>
+<td class="data row7 col7" id="T_166c5_row7_col7">85.23</td>
+<td class="data row7 col8" id="T_166c5_row7_col8">67.96</td>
+<td class="data row7 col9" id="T_166c5_row7_col9">2.50</td>
+<td class="data row7 col10" id="T_166c5_row7_col10">99.69</td>
+<td class="data row7 col11" id="T_166c5_row7_col11">75.73</td>
+<td class="data row7 col12" id="T_166c5_row7_col12">80.63</td>
+<td class="data row7 col13" id="T_166c5_row7_col13">186.36</td>
+</tr>
+<tr>
+<th class="row_heading level0 row8" id="T_166c5_level0_row8">8</th>
+<td class="data row8 col0" id="T_166c5_row8_col0">Sun</td>
+<td class="data row8 col1" id="T_166c5_row8_col1">Session - Sep 15, 2026 9:59:12 AM</td>
+<td class="data row8 col2" id="T_166c5_row8_col2">3080892</td>
+<td class="data row8 col3" id="T_166c5_row8_col3">In direct sunlight, very minimal cloud cover.</td>
+<td class="data row8 col4" id="T_166c5_row8_col4">87.72</td>
+<td class="data row8 col5" id="T_166c5_row8_col5">103.15</td>
+<td class="data row8 col6" id="T_166c5_row8_col6">78.48</td>
+<td class="data row8 col7" id="T_166c5_row8_col7">86.17</td>
+<td class="data row8 col8" id="T_166c5_row8_col8">66.89</td>
+<td class="data row8 col9" id="T_166c5_row8_col9">3.27</td>
+<td class="data row8 col10" id="T_166c5_row8_col10">99.29</td>
+<td class="data row8 col11" id="T_166c5_row8_col11">75.33</td>
+<td class="data row8 col12" id="T_166c5_row8_col12">81.33</td>
+<td class="data row8 col13" id="T_166c5_row8_col13">185.12</td>
+</tr>
+<tr>
+<th class="row_heading level0 row9" id="T_166c5_level0_row9">9</th>
+<td class="data row9 col0" id="T_166c5_row9_col0">Sun</td>
+<td class="data row9 col1" id="T_166c5_row9_col1">Session - Sep 16, 2026 10:40:44 AM</td>
+<td class="data row9 col2" id="T_166c5_row9_col2">3080892</td>
+<td class="data row9 col3" id="T_166c5_row9_col3">Slight breeze, sunny, clouds never covered the device.</td>
+<td class="data row9 col4" id="T_166c5_row9_col4">89.23</td>
+<td class="data row9 col5" id="T_166c5_row9_col5">106.34</td>
+<td class="data row9 col6" id="T_166c5_row9_col6">78.60</td>
+<td class="data row9 col7" id="T_166c5_row9_col7">86.92</td>
+<td class="data row9 col8" id="T_166c5_row9_col8">63.13</td>
+<td class="data row9 col9" id="T_166c5_row9_col9">2.35</td>
+<td class="data row9 col10" id="T_166c5_row9_col10">101.30</td>
+<td class="data row9 col11" id="T_166c5_row9_col11">74.96</td>
+<td class="data row9 col12" id="T_166c5_row9_col12">81.40</td>
+<td class="data row9 col13" id="T_166c5_row9_col13">167.11</td>
+</tr>
+<tr>
+<th class="row_heading level0 row10" id="T_166c5_level0_row10">10</th>
+<td class="data row10 col0" id="T_166c5_row10_col0">Shade</td>
+<td class="data row10 col1" id="T_166c5_row10_col1">Session - Sep 11, 2026 12:06:21 PM</td>
+<td class="data row10 col2" id="T_166c5_row10_col2">3080887</td>
+<td class="data row10 col3" id="T_166c5_row10_col3">In shade, bus came nearby around min 4</td>
+<td class="data row10 col4" id="T_166c5_row10_col4">92.50</td>
+<td class="data row10 col5" id="T_166c5_row10_col5">93.60</td>
+<td class="data row10 col6" id="T_166c5_row10_col6">79.52</td>
+<td class="data row10 col7" id="T_166c5_row10_col7">83.59</td>
+<td class="data row10 col8" id="T_166c5_row10_col8">57.25</td>
+<td class="data row10 col9" id="T_166c5_row10_col9">1.47</td>
+<td class="data row10 col10" id="T_166c5_row10_col10">106.39</td>
+<td class="data row10 col11" id="T_166c5_row10_col11">75.17</td>
+<td class="data row10 col12" id="T_166c5_row10_col12">79.60</td>
+<td class="data row10 col13" id="T_166c5_row10_col13">188.89</td>
+</tr>
+<tr>
+<th class="row_heading level0 row11" id="T_166c5_level0_row11">11</th>
+<td class="data row11 col0" id="T_166c5_row11_col0">Shade</td>
+<td class="data row11 col1" id="T_166c5_row11_col1">Session - Sep 14, 2026 11:20:54 AM</td>
+<td class="data row11 col2" id="T_166c5_row11_col2">3080892</td>
+<td class="data row11 col3" id="T_166c5_row11_col3">Shade measurement from bottom left circle zone 13</td>
+<td class="data row11 col4" id="T_166c5_row11_col4">89.21</td>
+<td class="data row11 col5" id="T_166c5_row11_col5">92.68</td>
+<td class="data row11 col6" id="T_166c5_row11_col6">77.89</td>
+<td class="data row11 col7" id="T_166c5_row11_col7">82.17</td>
+<td class="data row11 col8" id="T_166c5_row11_col8">60.91</td>
+<td class="data row11 col9" id="T_166c5_row11_col9">2.85</td>
+<td class="data row11 col10" id="T_166c5_row11_col10">100.05</td>
+<td class="data row11 col11" id="T_166c5_row11_col11">73.95</td>
+<td class="data row11 col12" id="T_166c5_row11_col12">78.25</td>
+<td class="data row11 col13" id="T_166c5_row11_col13">221.49</td>
+</tr>
+<tr>
+<th class="row_heading level0 row12" id="T_166c5_level0_row12">12</th>
+<td class="data row12 col0" id="T_166c5_row12_col0">Shade</td>
+<td class="data row12 col1" id="T_166c5_row12_col1">Session - Sep 14, 2026 11:55:16 AM</td>
+<td class="data row12 col2" id="T_166c5_row12_col2">3080892</td>
+<td class="data row12 col3" id="T_166c5_row12_col3">Shaded measurement top left circle zone 13</td>
+<td class="data row12 col4" id="T_166c5_row12_col4">91.68</td>
+<td class="data row12 col5" id="T_166c5_row12_col5">99.89</td>
+<td class="data row12 col6" id="T_166c5_row12_col6">77.50</td>
+<td class="data row12 col7" id="T_166c5_row12_col7">84.27</td>
+<td class="data row12 col8" id="T_166c5_row12_col8">53.57</td>
+<td class="data row12 col9" id="T_166c5_row12_col9">2.28</td>
+<td class="data row12 col10" id="T_166c5_row12_col10">102.35</td>
+<td class="data row12 col11" id="T_166c5_row12_col11">72.42</td>
+<td class="data row12 col12" id="T_166c5_row12_col12">78.86</td>
+<td class="data row12 col13" id="T_166c5_row12_col13">196.85</td>
+</tr>
+<tr>
+<th class="row_heading level0 row13" id="T_166c5_level0_row13">13</th>
+<td class="data row13 col0" id="T_166c5_row13_col0">Shade</td>
+<td class="data row13 col1" id="T_166c5_row13_col1">Session - Sep 14, 2026 3:24:35 PM</td>
+<td class="data row13 col2" id="T_166c5_row13_col2">3080887</td>
+<td class="data row13 col3" id="T_166c5_row13_col3">Shade, occasional breezes, cars and students walking by frequently </td>
+<td class="data row13 col4" id="T_166c5_row13_col4">97.01</td>
+<td class="data row13 col5" id="T_166c5_row13_col5">102.30</td>
+<td class="data row13 col6" id="T_166c5_row13_col6">77.09</td>
+<td class="data row13 col7" id="T_166c5_row13_col7">85.15</td>
+<td class="data row13 col8" id="T_166c5_row13_col8">41.43</td>
+<td class="data row13 col9" id="T_166c5_row13_col9">1.34</td>
+<td class="data row13 col10" id="T_166c5_row13_col10">106.70</td>
+<td class="data row13 col11" id="T_166c5_row13_col11">69.70</td>
+<td class="data row13 col12" id="T_166c5_row13_col12">78.63</td>
+<td class="data row13 col13" id="T_166c5_row13_col13">177.36</td>
+</tr>
+<tr>
+<th class="row_heading level0 row14" id="T_166c5_level0_row14">14</th>
+<td class="data row14 col0" id="T_166c5_row14_col0">Shade</td>
+<td class="data row14 col1" id="T_166c5_row14_col1">Session - Sep 14, 2026 4:02:41 PM</td>
+<td class="data row14 col2" id="T_166c5_row14_col2">3080887</td>
+<td class="data row14 col3" id="T_166c5_row14_col3">shade, students occasionally passing, next to building, slight tree coverage </td>
+<td class="data row14 col4" id="T_166c5_row14_col4">100.35</td>
+<td class="data row14 col5" id="T_166c5_row14_col5">106.13</td>
+<td class="data row14 col6" id="T_166c5_row14_col6">78.35</td>
+<td class="data row14 col7" id="T_166c5_row14_col7">86.96</td>
+<td class="data row14 col8" id="T_166c5_row14_col8">38.35</td>
+<td class="data row14 col9" id="T_166c5_row14_col9">1.42</td>
+<td class="data row14 col10" id="T_166c5_row14_col10">111.59</td>
+<td class="data row14 col11" id="T_166c5_row14_col11">70.37</td>
+<td class="data row14 col12" id="T_166c5_row14_col12">79.73</td>
+<td class="data row14 col13" id="T_166c5_row14_col13">167.85</td>
+</tr>
+<tr>
+<th class="row_heading level0 row15" id="T_166c5_level0_row15">15</th>
+<td class="data row15 col0" id="T_166c5_row15_col0">Shade</td>
+<td class="data row15 col1" id="T_166c5_row15_col1">Session - Sep 14, 2026 9:31:46 AM</td>
+<td class="data row15 col2" id="T_166c5_row15_col2">3080887</td>
+<td class="data row15 col3" id="T_166c5_row15_col3">In front of ECJ, building is casting shadow, cloudy. </td>
+<td class="data row15 col4" id="T_166c5_row15_col4">84.04</td>
+<td class="data row15 col5" id="T_166c5_row15_col5">88.33</td>
+<td class="data row15 col6" id="T_166c5_row15_col6">78.31</td>
+<td class="data row15 col7" id="T_166c5_row15_col7">80.78</td>
+<td class="data row15 col8" id="T_166c5_row15_col8">77.72</td>
+<td class="data row15 col9" id="T_166c5_row15_col9">3.55</td>
+<td class="data row15 col10" id="T_166c5_row15_col10">94.41</td>
+<td class="data row15 col11" id="T_166c5_row15_col11">76.32</td>
+<td class="data row15 col12" id="T_166c5_row15_col12">78.21</td>
+<td class="data row15 col13" id="T_166c5_row15_col13">228.66</td>
+</tr>
+<tr>
+<th class="row_heading level0 row16" id="T_166c5_level0_row16">16</th>
+<td class="data row16 col0" id="T_166c5_row16_col0">Shade</td>
+<td class="data row16 col1" id="T_166c5_row16_col1">Session - Sep 14, 2026 9:45:12 AM</td>
+<td class="data row16 col2" id="T_166c5_row16_col2">3080892</td>
+<td class="data row16 col3" id="T_166c5_row16_col3">- this was shady location, shade from building, traffic emissions from Guadalupe, less wind then location 1, foot traffic</td>
+<td class="data row16 col4" id="T_166c5_row16_col4">89.74</td>
+<td class="data row16 col5" id="T_166c5_row16_col5">100.88</td>
+<td class="data row16 col6" id="T_166c5_row16_col6">80.40</td>
+<td class="data row16 col7" id="T_166c5_row16_col7">85.76</td>
+<td class="data row16 col8" id="T_166c5_row16_col8">67.43</td>
+<td class="data row16 col9" id="T_166c5_row16_col9">1.80</td>
+<td class="data row16 col10" id="T_166c5_row16_col10">104.94</td>
+<td class="data row16 col11" id="T_166c5_row16_col11">77.43</td>
+<td class="data row16 col12" id="T_166c5_row16_col12">81.28</td>
+<td class="data row16 col13" id="T_166c5_row16_col13">171.69</td>
+</tr>
+<tr>
+<th class="row_heading level0 row17" id="T_166c5_level0_row17">17</th>
+<td class="data row17 col0" id="T_166c5_row17_col0">Shade</td>
+<td class="data row17 col1" id="T_166c5_row17_col1">Session - Sep 14, 2026 9:50:50 AM</td>
+<td class="data row17 col2" id="T_166c5_row17_col2">3080887</td>
+<td class="data row17 col3" id="T_166c5_row17_col3">In front of the EER, slightly cloudy, on grass, no sprinklers, building casting shadow.  </td>
+<td class="data row17 col4" id="T_166c5_row17_col4">86.11</td>
+<td class="data row17 col5" id="T_166c5_row17_col5">89.77</td>
+<td class="data row17 col6" id="T_166c5_row17_col6">78.67</td>
+<td class="data row17 col7" id="T_166c5_row17_col7">81.52</td>
+<td class="data row17 col8" id="T_166c5_row17_col8">72.34</td>
+<td class="data row17 col9" id="T_166c5_row17_col9">1.91</td>
+<td class="data row17 col10" id="T_166c5_row17_col10">97.64</td>
+<td class="data row17 col11" id="T_166c5_row17_col11">76.15</td>
+<td class="data row17 col12" id="T_166c5_row17_col12">78.60</td>
+<td class="data row17 col13" id="T_166c5_row17_col13">208.21</td>
+</tr>
+<tr>
+<th class="row_heading level0 row18" id="T_166c5_level0_row18">18</th>
+<td class="data row18 col0" id="T_166c5_row18_col0">Shade</td>
+<td class="data row18 col1" id="T_166c5_row18_col1">Session - Sep 15, 2026 11:28:14 AM</td>
+<td class="data row18 col2" id="T_166c5_row18_col2">3080892</td>
+<td class="data row18 col3" id="T_166c5_row18_col3">Shaded, some wind. Clear skies</td>
+<td class="data row18 col4" id="T_166c5_row18_col4">90.44</td>
+<td class="data row18 col5" id="T_166c5_row18_col5">95.90</td>
+<td class="data row18 col6" id="T_166c5_row18_col6">74.83</td>
+<td class="data row18 col7" id="T_166c5_row18_col7">80.85</td>
+<td class="data row18 col8" id="T_166c5_row18_col8">49.03</td>
+<td class="data row18 col9" id="T_166c5_row18_col9">5.25</td>
+<td class="data row18 col10" id="T_166c5_row18_col10">97.26</td>
+<td class="data row18 col11" id="T_166c5_row18_col11">68.69</td>
+<td class="data row18 col12" id="T_166c5_row18_col12">75.29</td>
+<td class="data row18 col13" id="T_166c5_row18_col13">242.20</td>
+</tr>
+<tr>
+<th class="row_heading level0 row19" id="T_166c5_level0_row19">19</th>
+<td class="data row19 col0" id="T_166c5_row19_col0">Shade</td>
+<td class="data row19 col1" id="T_166c5_row19_col1">Session - Sep 15, 2026 3:37:22 PM</td>
+<td class="data row19 col2" id="T_166c5_row19_col2">3080892</td>
+<td class="data row19 col3" id="T_166c5_row19_col3">In shade of a tree in between burdine and anaa hiss gym. 3:37-3:47. </td>
+<td class="data row19 col4" id="T_166c5_row19_col4">100.26</td>
+<td class="data row19 col5" id="T_166c5_row19_col5">106.50</td>
+<td class="data row19 col6" id="T_166c5_row19_col6">74.77</td>
+<td class="data row19 col7" id="T_166c5_row19_col7">84.67</td>
+<td class="data row19 col8" id="T_166c5_row19_col8">30.97</td>
+<td class="data row19 col9" id="T_166c5_row19_col9">1.53</td>
+<td class="data row19 col10" id="T_166c5_row19_col10">105.64</td>
+<td class="data row19 col11" id="T_166c5_row19_col11">64.11</td>
+<td class="data row19 col12" id="T_166c5_row19_col12">76.31</td>
+<td class="data row19 col13" id="T_166c5_row19_col13">184.37</td>
+</tr>
+<tr>
+<th class="row_heading level0 row20" id="T_166c5_level0_row20">20</th>
+<td class="data row20 col0" id="T_166c5_row20_col0">Shade</td>
+<td class="data row20 col1" id="T_166c5_row20_col1">Session - Sep 15, 2026 3:38:12 PM</td>
+<td class="data row20 col2" id="T_166c5_row20_col2">3080887</td>
+<td class="data row20 col3" id="T_166c5_row20_col3">Shaded by tree, slight breeze, no clouds</td>
+<td class="data row20 col4" id="T_166c5_row20_col4">100.61</td>
+<td class="data row20 col5" id="T_166c5_row20_col5">106.09</td>
+<td class="data row20 col6" id="T_166c5_row20_col6">74.99</td>
+<td class="data row20 col7" id="T_166c5_row20_col7">84.77</td>
+<td class="data row20 col8" id="T_166c5_row20_col8">30.90</td>
+<td class="data row20 col9" id="T_166c5_row20_col9">1.42</td>
+<td class="data row20 col10" id="T_166c5_row20_col10">106.25</td>
+<td class="data row20 col11" id="T_166c5_row20_col11">64.37</td>
+<td class="data row20 col12" id="T_166c5_row20_col12">76.55</td>
+<td class="data row20 col13" id="T_166c5_row20_col13">187.55</td>
+</tr>
+<tr>
+<th class="row_heading level0 row21" id="T_166c5_level0_row21">21</th>
+<td class="data row21 col0" id="T_166c5_row21_col0">Shade</td>
+<td class="data row21 col1" id="T_166c5_row21_col1">Session - Sep 15, 2026 9:30:16 AM</td>
+<td class="data row21 col2" id="T_166c5_row21_col2">3080887</td>
+<td class="data row21 col3" id="T_166c5_row21_col3">This was a shaded spot. </td>
+<td class="data row21 col4" id="T_166c5_row21_col4">83.92</td>
+<td class="data row21 col5" id="T_166c5_row21_col5">86.93</td>
+<td class="data row21 col6" id="T_166c5_row21_col6">77.52</td>
+<td class="data row21 col7" id="T_166c5_row21_col7">79.92</td>
+<td class="data row21 col8" id="T_166c5_row21_col8">75.55</td>
+<td class="data row21 col9" id="T_166c5_row21_col9">2.33</td>
+<td class="data row21 col10" id="T_166c5_row21_col10">93.29</td>
+<td class="data row21 col11" id="T_166c5_row21_col11">75.35</td>
+<td class="data row21 col12" id="T_166c5_row21_col12">77.43</td>
+<td class="data row21 col13" id="T_166c5_row21_col13">227.46</td>
+</tr>
+<tr>
+<th class="row_heading level0 row22" id="T_166c5_level0_row22">22</th>
+<td class="data row22 col0" id="T_166c5_row22_col0">Shade</td>
+<td class="data row22 col1" id="T_166c5_row22_col1">Session - Sep 15, 2026 9:50:32 AM</td>
+<td class="data row22 col2" id="T_166c5_row22_col2">3080887</td>
+<td class="data row22 col3" id="T_166c5_row22_col3">This was in the shade. </td>
+<td class="data row22 col4" id="T_166c5_row22_col4">86.51</td>
+<td class="data row22 col5" id="T_166c5_row22_col5">90.84</td>
+<td class="data row22 col6" id="T_166c5_row22_col6">77.75</td>
+<td class="data row22 col7" id="T_166c5_row22_col7">80.93</td>
+<td class="data row22 col8" id="T_166c5_row22_col8">68.10</td>
+<td class="data row22 col9" id="T_166c5_row22_col9">1.43</td>
+<td class="data row22 col10" id="T_166c5_row22_col10">96.88</td>
+<td class="data row22 col11" id="T_166c5_row22_col11">74.73</td>
+<td class="data row22 col12" id="T_166c5_row22_col12">77.46</td>
+<td class="data row22 col13" id="T_166c5_row22_col13">206.09</td>
+</tr>
+<tr>
+<th class="row_heading level0 row23" id="T_166c5_level0_row23">23</th>
+<td class="data row23 col0" id="T_166c5_row23_col0">Shade</td>
+<td class="data row23 col1" id="T_166c5_row23_col1">Session - Sep 16, 2026 10:26:07 AM</td>
+<td class="data row23 col2" id="T_166c5_row23_col2">3080892</td>
+<td class="data row23 col3" id="T_166c5_row23_col3">Underneath trees, cloudy sky, minimal wind</td>
+<td class="data row23 col4" id="T_166c5_row23_col4">85.07</td>
+<td class="data row23 col5" id="T_166c5_row23_col5">87.37</td>
+<td class="data row23 col6" id="T_166c5_row23_col6">76.54</td>
+<td class="data row23 col7" id="T_166c5_row23_col7">79.78</td>
+<td class="data row23 col8" id="T_166c5_row23_col8">68.30</td>
+<td class="data row23 col9" id="T_166c5_row23_col9">0.53</td>
+<td class="data row23 col10" id="T_166c5_row23_col10">93.58</td>
+<td class="data row23 col11" id="T_166c5_row23_col11">73.43</td>
+<td class="data row23 col12" id="T_166c5_row23_col12">76.90</td>
+<td class="data row23 col13" id="T_166c5_row23_col13">187.59</td>
+</tr>
+<tr>
+<th class="row_heading level0 row24" id="T_166c5_level0_row24">24</th>
+<td class="data row24 col0" id="T_166c5_row24_col0">Shade</td>
+<td class="data row24 col1" id="T_166c5_row24_col1">Session - Sep 16, 2026 10:49:55 AM</td>
+<td class="data row24 col2" id="T_166c5_row24_col2">3080887</td>
+<td class="data row24 col3" id="T_166c5_row24_col3">Enter Notes-shaded
+-by construction
+-unchanged by cloudiness (not noticeable)</td>
+<td class="data row24 col4" id="T_166c5_row24_col4">86.89</td>
+<td class="data row24 col5" id="T_166c5_row24_col5">93.44</td>
+<td class="data row24 col6" id="T_166c5_row24_col6">77.48</td>
+<td class="data row24 col7" id="T_166c5_row24_col7">82.31</td>
+<td class="data row24 col8" id="T_166c5_row24_col8">66.11</td>
+<td class="data row24 col9" id="T_166c5_row24_col9">2.94</td>
+<td class="data row24 col10" id="T_166c5_row24_col10">96.92</td>
+<td class="data row24 col11" id="T_166c5_row24_col11">74.18</td>
+<td class="data row24 col12" id="T_166c5_row24_col12">78.55</td>
+<td class="data row24 col13" id="T_166c5_row24_col13">218.75</td>
+</tr>
+<tr>
+<th class="row_heading level0 row25" id="T_166c5_level0_row25">25</th>
+<td class="data row25 col0" id="T_166c5_row25_col0">Shade</td>
+<td class="data row25 col1" id="T_166c5_row25_col1">Session - Sep 16, 2026 10:58:36 AM</td>
+<td class="data row25 col2" id="T_166c5_row25_col2">3080892</td>
+<td class="data row25 col3" id="T_166c5_row25_col3">Shade, no wind, no clouds</td>
+<td class="data row25 col4" id="T_166c5_row25_col4">87.67</td>
+<td class="data row25 col5" id="T_166c5_row25_col5">87.51</td>
+<td class="data row25 col6" id="T_166c5_row25_col6">77.26</td>
+<td class="data row25 col7" id="T_166c5_row25_col7">79.83</td>
+<td class="data row25 col8" id="T_166c5_row25_col8">63.22</td>
+<td class="data row25 col9" id="T_166c5_row25_col9">1.70</td>
+<td class="data row25 col10" id="T_166c5_row25_col10">97.31</td>
+<td class="data row25 col11" id="T_166c5_row25_col11">73.60</td>
+<td class="data row25 col12" id="T_166c5_row25_col12">76.74</td>
+<td class="data row25 col13" id="T_166c5_row25_col13">224.75</td>
+</tr>
+<tr>
+<th class="row_heading level0 row26" id="T_166c5_level0_row26">26</th>
+<td class="data row26 col0" id="T_166c5_row26_col0">Mixed</td>
+<td class="data row26 col1" id="T_166c5_row26_col1">Session - Sep 14, 2026 10:01:01 AM</td>
+<td class="data row26 col2" id="T_166c5_row26_col2">3080892</td>
+<td class="data row26 col3" id="T_166c5_row26_col3">- on Guadalupe so a lot of vehicle/foot traffic, slightly windy, started cloudy but most of measurement in sun</td>
+<td class="data row26 col4" id="T_166c5_row26_col4">87.12</td>
+<td class="data row26 col5" id="T_166c5_row26_col5">90.14</td>
+<td class="data row26 col6" id="T_166c5_row26_col6">78.10</td>
+<td class="data row26 col7" id="T_166c5_row26_col7">81.06</td>
+<td class="data row26 col8" id="T_166c5_row26_col8">67.39</td>
+<td class="data row26 col9" id="T_166c5_row26_col9">1.73</td>
+<td class="data row26 col10" id="T_166c5_row26_col10">97.96</td>
+<td class="data row26 col11" id="T_166c5_row26_col11">74.99</td>
+<td class="data row26 col12" id="T_166c5_row26_col12">77.76</td>
+<td class="data row26 col13" id="T_166c5_row26_col13">216.00</td>
+</tr>
+<tr>
+<th class="row_heading level0 row27" id="T_166c5_level0_row27">27</th>
+<td class="data row27 col0" id="T_166c5_row27_col0">Mixed</td>
+<td class="data row27 col1" id="T_166c5_row27_col1">Session - Sep 14, 2026 10:06:42 AM</td>
+<td class="data row27 col2" id="T_166c5_row27_col2">3080887</td>
+<td class="data row27 col3" id="T_166c5_row27_col3">Cloud cover, no building shadow, changes in cloudiness throughout measurement. </td>
+<td class="data row27 col4" id="T_166c5_row27_col4">86.31</td>
+<td class="data row27 col5" id="T_166c5_row27_col5">93.89</td>
+<td class="data row27 col6" id="T_166c5_row27_col6">78.17</td>
+<td class="data row27 col7" id="T_166c5_row27_col7">83.17</td>
+<td class="data row27 col8" id="T_166c5_row27_col8">70.02</td>
+<td class="data row27 col9" id="T_166c5_row27_col9">3.54</td>
+<td class="data row27 col10" id="T_166c5_row27_col10">97.19</td>
+<td class="data row27 col11" id="T_166c5_row27_col11">75.36</td>
+<td class="data row27 col12" id="T_166c5_row27_col12">79.74</td>
+<td class="data row27 col13" id="T_166c5_row27_col13">206.74</td>
+</tr>
+<tr>
+<th class="row_heading level0 row28" id="T_166c5_level0_row28">28</th>
+<td class="data row28 col0" id="T_166c5_row28_col0">Mixed</td>
+<td class="data row28 col1" id="T_166c5_row28_col1">Session - Sep 14, 2026 3:37:12 PM</td>
+<td class="data row28 col2" id="T_166c5_row28_col2">3080887</td>
+<td class="data row28 col3" id="T_166c5_row28_col3">sunny, breezes slightly stronger, students and cars passing frequently, varying cloud coverage </td>
+<td class="data row28 col4" id="T_166c5_row28_col4">98.84</td>
+<td class="data row28 col5" id="T_166c5_row28_col5">114.71</td>
+<td class="data row28 col6" id="T_166c5_row28_col6">78.20</td>
+<td class="data row28 col7" id="T_166c5_row28_col7">89.75</td>
+<td class="data row28 col8" id="T_166c5_row28_col8">40.64</td>
+<td class="data row28 col9" id="T_166c5_row28_col9">2.76</td>
+<td class="data row28 col10" id="T_166c5_row28_col10">110.09</td>
+<td class="data row28 col11" id="T_166c5_row28_col11">70.75</td>
+<td class="data row28 col12" id="T_166c5_row28_col12">81.56</td>
+<td class="data row28 col13" id="T_166c5_row28_col13">143.70</td>
+</tr>
+<tr>
+<th class="row_heading level0 row29" id="T_166c5_level0_row29">29</th>
+<td class="data row29 col0" id="T_166c5_row29_col0">Mixed</td>
+<td class="data row29 col1" id="T_166c5_row29_col1">Session - Sep 14, 2026 9:29:46 AM</td>
+<td class="data row29 col2" id="T_166c5_row29_col2">3080892</td>
+<td class="data row29 col3" id="T_166c5_row29_col3">- cloudy location, 9:30-9:40 AM, construction near me, slightly windy</td>
+<td class="data row29 col4" id="T_166c5_row29_col4">84.99</td>
+<td class="data row29 col5" id="T_166c5_row29_col5">90.25</td>
+<td class="data row29 col6" id="T_166c5_row29_col6">78.39</td>
+<td class="data row29 col7" id="T_166c5_row29_col7">81.29</td>
+<td class="data row29 col8" id="T_166c5_row29_col8">74.98</td>
+<td class="data row29 col9" id="T_166c5_row29_col9">1.93</td>
+<td class="data row29 col10" id="T_166c5_row29_col10">95.83</td>
+<td class="data row29 col11" id="T_166c5_row29_col11">76.15</td>
+<td class="data row29 col12" id="T_166c5_row29_col12">78.33</td>
+<td class="data row29 col13" id="T_166c5_row29_col13">205.16</td>
+</tr>
+<tr>
+<th class="row_heading level0 row30" id="T_166c5_level0_row30">30</th>
+<td class="data row30 col0" id="T_166c5_row30_col0">Mixed</td>
+<td class="data row30 col1" id="T_166c5_row30_col1">Session - Sep 15, 2026 10:27:32 AM</td>
+<td class="data row30 col2" id="T_166c5_row30_col2">3080892</td>
+<td class="data row30 col3" id="T_166c5_row30_col3">In direct sunlight, no shade.</td>
+<td class="data row30 col4" id="T_166c5_row30_col4">89.28</td>
+<td class="data row30 col5" id="T_166c5_row30_col5">109.41</td>
+<td class="data row30 col6" id="T_166c5_row30_col6">78.38</td>
+<td class="data row30 col7" id="T_166c5_row30_col7">88.32</td>
+<td class="data row30 col8" id="T_166c5_row30_col8">62.22</td>
+<td class="data row30 col9" id="T_166c5_row30_col9">3.44</td>
+<td class="data row30 col10" id="T_166c5_row30_col10">100.90</td>
+<td class="data row30 col11" id="T_166c5_row30_col11">74.62</td>
+<td class="data row30 col12" id="T_166c5_row30_col12">82.39</td>
+<td class="data row30 col13" id="T_166c5_row30_col13">162.52</td>
+</tr>
+<tr>
+<th class="row_heading level0 row31" id="T_166c5_level0_row31">31</th>
+<td class="data row31 col0" id="T_166c5_row31_col0">Mixed</td>
+<td class="data row31 col1" id="T_166c5_row31_col1">Session - Sep 15, 2026 3:55:25 PM</td>
+<td class="data row31 col2" id="T_166c5_row31_col2">3080892</td>
+<td class="data row31 col3" id="T_166c5_row31_col3">No shade no clouds. Light foot traffic. Wind direction changed at 3:58 &amp; 4:02. </td>
+<td class="data row31 col4" id="T_166c5_row31_col4">101.67</td>
+<td class="data row31 col5" id="T_166c5_row31_col5">118.86</td>
+<td class="data row31 col6" id="T_166c5_row31_col6">76.39</td>
+<td class="data row31 col7" id="T_166c5_row31_col7">89.68</td>
+<td class="data row31 col8" id="T_166c5_row31_col8">32.18</td>
+<td class="data row31 col9" id="T_166c5_row31_col9">2.36</td>
+<td class="data row31 col10" id="T_166c5_row31_col10">109.29</td>
+<td class="data row31 col11" id="T_166c5_row31_col11">66.41</td>
+<td class="data row31 col12" id="T_166c5_row31_col12">79.98</td>
+<td class="data row31 col13" id="T_166c5_row31_col13">139.34</td>
+</tr>
+<tr>
+<th class="row_heading level0 row32" id="T_166c5_level0_row32">32</th>
+<td class="data row32 col0" id="T_166c5_row32_col0">Mixed</td>
+<td class="data row32 col1" id="T_166c5_row32_col1">Session - Sep 15, 2026 3:58:31 PM</td>
+<td class="data row32 col2" id="T_166c5_row32_col2">3080887</td>
+<td class="data row32 col3" id="T_166c5_row32_col3">No shade, no clouds, light breeze </td>
+<td class="data row32 col4" id="T_166c5_row32_col4">101.43</td>
+<td class="data row32 col5" id="T_166c5_row32_col5">119.12</td>
+<td class="data row32 col6" id="T_166c5_row32_col6">77.67</td>
+<td class="data row32 col7" id="T_166c5_row32_col7">90.84</td>
+<td class="data row32 col8" id="T_166c5_row32_col8">35.16</td>
+<td class="data row32 col9" id="T_166c5_row32_col9">3.52</td>
+<td class="data row32 col10" id="T_166c5_row32_col10">111.31</td>
+<td class="data row32 col11" id="T_166c5_row32_col11">68.76</td>
+<td class="data row32 col12" id="T_166c5_row32_col12">81.52</td>
+<td class="data row32 col13" id="T_166c5_row32_col13">136.41</td>
+</tr>
+<tr>
+<th class="row_heading level0 row33" id="T_166c5_level0_row33">33</th>
+<td class="data row33 col0" id="T_166c5_row33_col0">Mixed</td>
+<td class="data row33 col1" id="T_166c5_row33_col1">Session - Sep 15, 2026 9:26:57 AM</td>
+<td class="data row33 col2" id="T_166c5_row33_col2">3080892</td>
+<td class="data row33 col3" id="T_166c5_row33_col3">In the shade covered by trees, sun periodically peaking out through clouds. </td>
+<td class="data row33 col4" id="T_166c5_row33_col4">83.80</td>
+<td class="data row33 col5" id="T_166c5_row33_col5">87.57</td>
+<td class="data row33 col6" id="T_166c5_row33_col6">77.46</td>
+<td class="data row33 col7" id="T_166c5_row33_col7">80.03</td>
+<td class="data row33 col8" id="T_166c5_row33_col8">75.69</td>
+<td class="data row33 col9" id="T_166c5_row33_col9">2.01</td>
+<td class="data row33 col10" id="T_166c5_row33_col10">92.97</td>
+<td class="data row33 col11" id="T_166c5_row33_col11">75.29</td>
+<td class="data row33 col12" id="T_166c5_row33_col12">77.40</td>
+<td class="data row33 col13" id="T_166c5_row33_col13">226.20</td>
+</tr>
+<tr>
+<th class="row_heading level0 row34" id="T_166c5_level0_row34">34</th>
+<td class="data row34 col0" id="T_166c5_row34_col0">Mixed</td>
+<td class="data row34 col1" id="T_166c5_row34_col1">Session - Sep 16, 2026 10:36:45 AM</td>
+<td class="data row34 col2" id="T_166c5_row34_col2">3080887</td>
+<td class="data row34 col3" id="T_166c5_row34_col3">Enter Notes-temperature is hotter than weather app
+-first minute was a bit cloudy
+-5 min mark, pretty cloud
+-unshaded</td>
+<td class="data row34 col4" id="T_166c5_row34_col4">89.02</td>
+<td class="data row34 col5" id="T_166c5_row34_col5">106.33</td>
+<td class="data row34 col6" id="T_166c5_row34_col6">78.79</td>
+<td class="data row34 col7" id="T_166c5_row34_col7">87.37</td>
+<td class="data row34 col8" id="T_166c5_row34_col8">64.26</td>
+<td class="data row34 col9" id="T_166c5_row34_col9">1.90</td>
+<td class="data row34 col10" id="T_166c5_row34_col10">101.29</td>
+<td class="data row34 col11" id="T_166c5_row34_col11">75.33</td>
+<td class="data row34 col12" id="T_166c5_row34_col12">81.99</td>
+<td class="data row34 col13" id="T_166c5_row34_col13">157.09</td>
+</tr>
+<tr>
+<th class="row_heading level0 row35" id="T_166c5_level0_row35">35</th>
+<td class="data row35 col0" id="T_166c5_row35_col0">Mixed</td>
+<td class="data row35 col1" id="T_166c5_row35_col1">Session - Sep 16, 2026 11:03:55 AM</td>
+<td class="data row35 col2" id="T_166c5_row35_col2">3080887</td>
+<td class="data row35 col3" id="T_166c5_row35_col3">Location 3: Lower wind than other locations, in direct sunlight, but with trees, planted garden beds, and shade nearby. Ground is cemented gravel, no roadways nearby. Low to moderate foot traffic.</td>
+<td class="data row35 col4" id="T_166c5_row35_col4">91.38</td>
+<td class="data row35 col5" id="T_166c5_row35_col5">106.99</td>
+<td class="data row35 col6" id="T_166c5_row35_col6">79.23</td>
+<td class="data row35 col7" id="T_166c5_row35_col7">86.98</td>
+<td class="data row35 col8" id="T_166c5_row35_col8">59.41</td>
+<td class="data row35 col9" id="T_166c5_row35_col9">1.44</td>
+<td class="data row35 col10" id="T_166c5_row35_col10">104.75</td>
+<td class="data row35 col11" id="T_166c5_row35_col11">75.14</td>
+<td class="data row35 col12" id="T_166c5_row35_col12">81.14</td>
+<td class="data row35 col13" id="T_166c5_row35_col13">154.45</td>
+</tr>
+<tr>
+<th class="row_heading level0 row36" id="T_166c5_level0_row36">36</th>
+<td class="data row36 col0" id="T_166c5_row36_col0">Mixed</td>
+<td class="data row36 col1" id="T_166c5_row36_col1">Session - Sep 16, 2026 11:20:21 AM</td>
+<td class="data row36 col2" id="T_166c5_row36_col2">3080887</td>
+<td class="data row36 col3" id="T_166c5_row36_col3">Enter Notes-Partially in shade
+-Partially cloudy</td>
+<td class="data row36 col4" id="T_166c5_row36_col4">93.54</td>
+<td class="data row36 col5" id="T_166c5_row36_col5">109.59</td>
+<td class="data row36 col6" id="T_166c5_row36_col6">80.00</td>
+<td class="data row36 col7" id="T_166c5_row36_col7">88.92</td>
+<td class="data row36 col8" id="T_166c5_row36_col8">56.24</td>
+<td class="data row36 col9" id="T_166c5_row36_col9">1.11</td>
+<td class="data row36 col10" id="T_166c5_row36_col10">108.37</td>
+<td class="data row36 col11" id="T_166c5_row36_col11">75.54</td>
+<td class="data row36 col12" id="T_166c5_row36_col12">82.77</td>
+<td class="data row36 col13" id="T_166c5_row36_col13">131.65</td>
+</tr>
+<tr>
+<th class="row_heading level0 row37" id="T_166c5_level0_row37">37</th>
+<td class="data row37 col0" id="T_166c5_row37_col0">Unknown</td>
+<td class="data row37 col1" id="T_166c5_row37_col1">Session - Sep 11, 2026 11:27:25 AM</td>
+<td class="data row37 col2" id="T_166c5_row37_col2">3080887</td>
+<td class="data row37 col3" id="T_166c5_row37_col3"></td>
+<td class="data row37 col4" id="T_166c5_row37_col4">91.31</td>
+<td class="data row37 col5" id="T_166c5_row37_col5">112.79</td>
+<td class="data row37 col6" id="T_166c5_row37_col6">79.70</td>
+<td class="data row37 col7" id="T_166c5_row37_col7">90.93</td>
+<td class="data row37 col8" id="T_166c5_row37_col8">60.92</td>
+<td class="data row37 col9" id="T_166c5_row37_col9">2.02</td>
+<td class="data row37 col10" id="T_166c5_row37_col10">105.55</td>
+<td class="data row37 col11" id="T_166c5_row37_col11">75.87</td>
+<td class="data row37 col12" id="T_166c5_row37_col12">84.76</td>
+<td class="data row37 col13" id="T_166c5_row37_col13">112.43</td>
+</tr>
+<tr>
+<th class="row_heading level0 row38" id="T_166c5_level0_row38">38</th>
+<td class="data row38 col0" id="T_166c5_row38_col0">Unknown</td>
+<td class="data row38 col1" id="T_166c5_row38_col1">Session - Sep 11, 2026 11:47:40 AM</td>
+<td class="data row38 col2" id="T_166c5_row38_col2">3080887</td>
+<td class="data row38 col3" id="T_166c5_row38_col3">Next to cars, one parked during this. 3 people walked by around min 7</td>
+<td class="data row38 col4" id="T_166c5_row38_col4">95.98</td>
+<td class="data row38 col5" id="T_166c5_row38_col5">115.65</td>
+<td class="data row38 col6" id="T_166c5_row38_col6">81.80</td>
+<td class="data row38 col7" id="T_166c5_row38_col7">91.97</td>
+<td class="data row38 col8" id="T_166c5_row38_col8">55.39</td>
+<td class="data row38 col9" id="T_166c5_row38_col9">1.52</td>
+<td class="data row38 col10" id="T_166c5_row38_col10">114.46</td>
+<td class="data row38 col11" id="T_166c5_row38_col11">77.38</td>
+<td class="data row38 col12" id="T_166c5_row38_col12">85.08</td>
+<td class="data row38 col13" id="T_166c5_row38_col13">108.95</td>
+</tr>
+<tr>
+<th class="row_heading level0 row39" id="T_166c5_level0_row39">39</th>
+<td class="data row39 col0" id="T_166c5_row39_col0">Unknown</td>
+<td class="data row39 col1" id="T_166c5_row39_col1">Session - Sep 14, 2026 12:05:49 PM</td>
+<td class="data row39 col2" id="T_166c5_row39_col2">3080892</td>
+<td class="data row39 col3" id="T_166c5_row39_col3">Enter Notes</td>
+<td class="data row39 col4" id="T_166c5_row39_col4">92.25</td>
+<td class="data row39 col5" id="T_166c5_row39_col5">106.40</td>
+<td class="data row39 col6" id="T_166c5_row39_col6">77.29</td>
+<td class="data row39 col7" id="T_166c5_row39_col7">86.52</td>
+<td class="data row39 col8" id="T_166c5_row39_col8">51.68</td>
+<td class="data row39 col9" id="T_166c5_row39_col9">2.46</td>
+<td class="data row39 col10" id="T_166c5_row39_col10">102.60</td>
+<td class="data row39 col11" id="T_166c5_row39_col11">71.89</td>
+<td class="data row39 col12" id="T_166c5_row39_col12">80.21</td>
+<td class="data row39 col13" id="T_166c5_row39_col13">176.82</td>
+</tr>
+<tr>
+<th class="row_heading level0 row40" id="T_166c5_level0_row40">40</th>
+<td class="data row40 col0" id="T_166c5_row40_col0">Unknown</td>
+<td class="data row40 col1" id="T_166c5_row40_col1">Session - Sep 15, 2026 10:35:01 AM</td>
+<td class="data row40 col2" id="T_166c5_row40_col2">3080887</td>
+<td class="data row40 col3" id="T_166c5_row40_col3">Enter Notes</td>
+<td class="data row40 col4" id="T_166c5_row40_col4">90.93</td>
+<td class="data row40 col5" id="T_166c5_row40_col5">109.58</td>
+<td class="data row40 col6" id="T_166c5_row40_col6">78.22</td>
+<td class="data row40 col7" id="T_166c5_row40_col7">88.04</td>
+<td class="data row40 col8" id="T_166c5_row40_col8">57.44</td>
+<td class="data row40 col9" id="T_166c5_row40_col9">3.92</td>
+<td class="data row40 col10" id="T_166c5_row40_col10">102.56</td>
+<td class="data row40 col11" id="T_166c5_row40_col11">73.79</td>
+<td class="data row40 col12" id="T_166c5_row40_col12">81.76</td>
+<td class="data row40 col13" id="T_166c5_row40_col13">167.46</td>
+</tr>
+<tr>
+<th class="row_heading level0 row41" id="T_166c5_level0_row41">41</th>
+<td class="data row41 col0" id="T_166c5_row41_col0">Unknown</td>
+<td class="data row41 col1" id="T_166c5_row41_col1">Session - Sep 15, 2026 11:48:09 AM</td>
+<td class="data row41 col2" id="T_166c5_row41_col2">3080892</td>
+<td class="data row41 col3" id="T_166c5_row41_col3"></td>
+<td class="data row41 col4" id="T_166c5_row41_col4">98.25</td>
+<td class="data row41 col5" id="T_166c5_row41_col5">114.67</td>
+<td class="data row41 col6" id="T_166c5_row41_col6">78.27</td>
+<td class="data row41 col7" id="T_166c5_row41_col7">89.14</td>
+<td class="data row41 col8" id="T_166c5_row41_col8">41.87</td>
+<td class="data row41 col9" id="T_166c5_row41_col9">2.01</td>
+<td class="data row41 col10" id="T_166c5_row41_col10">109.68</td>
+<td class="data row41 col11" id="T_166c5_row41_col11">71.08</td>
+<td class="data row41 col12" id="T_166c5_row41_col12">80.99</td>
+<td class="data row41 col13" id="T_166c5_row41_col13">148.11</td>
+</tr>
+<tr>
+<th class="row_heading level0 row42" id="T_166c5_level0_row42">42</th>
+<td class="data row42 col0" id="T_166c5_row42_col0">Unknown</td>
+<td class="data row42 col1" id="T_166c5_row42_col1">Session - Sep 16, 2026 1:32:20 PM</td>
+<td class="data row42 col2" id="T_166c5_row42_col2">3080892</td>
+<td class="data row42 col3" id="T_166c5_row42_col3">Enter Notes</td>
+<td class="data row42 col4" id="T_166c5_row42_col4">98.83</td>
+<td class="data row42 col5" id="T_166c5_row42_col5">114.27</td>
+<td class="data row42 col6" id="T_166c5_row42_col6">79.34</td>
+<td class="data row42 col7" id="T_166c5_row42_col7">89.96</td>
+<td class="data row42 col8" id="T_166c5_row42_col8">43.18</td>
+<td class="data row42 col9" id="T_166c5_row42_col9">1.73</td>
+<td class="data row42 col10" id="T_166c5_row42_col10">111.90</td>
+<td class="data row42 col11" id="T_166c5_row42_col11">72.53</td>
+<td class="data row42 col12" id="T_166c5_row42_col12">82.14</td>
+<td class="data row42 col13" id="T_166c5_row42_col13">130.14</td>
+</tr>
+<tr>
+<th class="row_heading level0 row43" id="T_166c5_level0_row43">43</th>
+<td class="data row43 col0" id="T_166c5_row43_col0">Unknown</td>
+<td class="data row43 col1" id="T_166c5_row43_col1">Session - Sep 16, 2026 1:38:35 PM</td>
+<td class="data row43 col2" id="T_166c5_row43_col2">3080887</td>
+<td class="data row43 col3" id="T_166c5_row43_col3">Enter Notes</td>
+<td class="data row43 col4" id="T_166c5_row43_col4">97.31</td>
+<td class="data row43 col5" id="T_166c5_row43_col5">113.14</td>
+<td class="data row43 col6" id="T_166c5_row43_col6">79.13</td>
+<td class="data row43 col7" id="T_166c5_row43_col7">89.53</td>
+<td class="data row43 col8" id="T_166c5_row43_col8">45.73</td>
+<td class="data row43 col9" id="T_166c5_row43_col9">1.15</td>
+<td class="data row43 col10" id="T_166c5_row43_col10">110.27</td>
+<td class="data row43 col11" id="T_166c5_row43_col11">72.81</td>
+<td class="data row43 col12" id="T_166c5_row43_col12">82.04</td>
+<td class="data row43 col13" id="T_166c5_row43_col13">132.22</td>
+</tr>
+<tr>
+<th class="row_heading level0 row44" id="T_166c5_level0_row44">44</th>
+<td class="data row44 col0" id="T_166c5_row44_col0">Unknown</td>
+<td class="data row44 col1" id="T_166c5_row44_col1">Session - Sep 16, 2026 1:46:21 PM</td>
+<td class="data row44 col2" id="T_166c5_row44_col2">3080892</td>
+<td class="data row44 col3" id="T_166c5_row44_col3">Enter Notes</td>
+<td class="data row44 col4" id="T_166c5_row44_col4">95.68</td>
+<td class="data row44 col5" id="T_166c5_row44_col5">103.20</td>
+<td class="data row44 col6" id="T_166c5_row44_col6">78.30</td>
+<td class="data row44 col7" id="T_166c5_row44_col7">85.76</td>
+<td class="data row44 col8" id="T_166c5_row44_col8">46.84</td>
+<td class="data row44 col9" id="T_166c5_row44_col9">2.29</td>
+<td class="data row44 col10" id="T_166c5_row44_col10">107.29</td>
+<td class="data row44 col11" id="T_166c5_row44_col11">72.09</td>
+<td class="data row44 col12" id="T_166c5_row44_col12">79.58</td>
+<td class="data row44 col13" id="T_166c5_row44_col13">175.87</td>
+</tr>
+<tr>
+<th class="row_heading level0 row45" id="T_166c5_level0_row45">45</th>
+<td class="data row45 col0" id="T_166c5_row45_col0">Unknown</td>
+<td class="data row45 col1" id="T_166c5_row45_col1">Session - Sep 16, 2026 1:57:08 PM</td>
+<td class="data row45 col2" id="T_166c5_row45_col2">3080887</td>
+<td class="data row45 col3" id="T_166c5_row45_col3">Enter Notes</td>
+<td class="data row45 col4" id="T_166c5_row45_col4">98.84</td>
+<td class="data row45 col5" id="T_166c5_row45_col5">121.31</td>
+<td class="data row45 col6" id="T_166c5_row45_col6">80.80</td>
+<td class="data row45 col7" id="T_166c5_row45_col7">93.38</td>
+<td class="data row45 col8" id="T_166c5_row45_col8">46.77</td>
+<td class="data row45 col9" id="T_166c5_row45_col9">1.63</td>
+<td class="data row45 col10" id="T_166c5_row45_col10">114.88</td>
+<td class="data row45 col11" id="T_166c5_row45_col11">74.84</td>
+<td class="data row45 col12" id="T_166c5_row45_col12">85.09</td>
+<td class="data row45 col13" id="T_166c5_row45_col13">87.07</td>
+</tr>
+<tr>
+<th class="row_heading level0 row46" id="T_166c5_level0_row46">46</th>
+<td class="data row46 col0" id="T_166c5_row46_col0">Unknown</td>
+<td class="data row46 col1" id="T_166c5_row46_col1">Session - Sep 16, 2026 2:21:29 PM</td>
+<td class="data row46 col2" id="T_166c5_row46_col2">3080887</td>
+<td class="data row46 col3" id="T_166c5_row46_col3">Enter Notes</td>
+<td class="data row46 col4" id="T_166c5_row46_col4">100.85</td>
+<td class="data row46 col5" id="T_166c5_row46_col5">118.33</td>
+<td class="data row46 col6" id="T_166c5_row46_col6">80.78</td>
+<td class="data row46 col7" id="T_166c5_row46_col7">91.23</td>
+<td class="data row46 col8" id="T_166c5_row46_col8">42.98</td>
+<td class="data row46 col9" id="T_166c5_row46_col9">1.03</td>
+<td class="data row46 col10" id="T_166c5_row46_col10">116.50</td>
+<td class="data row46 col11" id="T_166c5_row46_col11">74.09</td>
+<td class="data row46 col12" id="T_166c5_row46_col12">82.84</td>
+<td class="data row46 col13" id="T_166c5_row46_col13">116.34</td>
+</tr>
+<tr>
+<th class="row_heading level0 row47" id="T_166c5_level0_row47">47</th>
+<td class="data row47 col0" id="T_166c5_row47_col0"></td>
+<td class="data row47 col1" id="T_166c5_row47_col1">MEAN</td>
+<td class="data row47 col2" id="T_166c5_row47_col2"></td>
+<td class="data row47 col3" id="T_166c5_row47_col3"></td>
+<td class="data row47 col4" id="T_166c5_row47_col4">92.10</td>
+<td class="data row47 col5" id="T_166c5_row47_col5">103.71</td>
+<td class="data row47 col6" id="T_166c5_row47_col6">78.35</td>
+<td class="data row47 col7" id="T_166c5_row47_col7">86.02</td>
+<td class="data row47 col8" id="T_166c5_row47_col8">56.49</td>
+<td class="data row47 col9" id="T_166c5_row47_col9">2.31</td>
+<td class="data row47 col10" id="T_166c5_row47_col10">103.65</td>
+<td class="data row47 col11" id="T_166c5_row47_col11">73.46</td>
+<td class="data row47 col12" id="T_166c5_row47_col12">80.33</td>
+<td class="data row47 col13" id="T_166c5_row47_col13">173.15</td>
+</tr>
+<tr>
+<th class="row_heading level0 row48" id="T_166c5_level0_row48">48</th>
+<td class="data row48 col0" id="T_166c5_row48_col0"></td>
+<td class="data row48 col1" id="T_166c5_row48_col1">STANDARD DEVIATION</td>
+<td class="data row48 col2" id="T_166c5_row48_col2"></td>
+<td class="data row48 col3" id="T_166c5_row48_col3"></td>
+<td class="data row48 col4" id="T_166c5_row48_col4">5.55</td>
+<td class="data row48 col5" id="T_166c5_row48_col5">10.22</td>
+<td class="data row48 col6" id="T_166c5_row48_col6">1.45</td>
+<td class="data row48 col7" id="T_166c5_row48_col7">3.84</td>
+<td class="data row48 col8" id="T_166c5_row48_col8">12.99</td>
+<td class="data row48 col9" id="T_166c5_row48_col9">0.97</td>
+<td class="data row48 col10" id="T_166c5_row48_col10">6.33</td>
+<td class="data row48 col11" id="T_166c5_row48_col11">3.09</td>
+<td class="data row48 col12" id="T_166c5_row48_col12">2.46</td>
+<td class="data row48 col13" id="T_166c5_row48_col13">37.37</td>
+</tr>
+<tr>
+<th class="row_heading level0 row49" id="T_166c5_level0_row49">49</th>
+<td class="data row49 col0" id="T_166c5_row49_col0"></td>
+<td class="data row49 col1" id="T_166c5_row49_col1">MEDIAN</td>
+<td class="data row49 col2" id="T_166c5_row49_col2"></td>
+<td class="data row49 col3" id="T_166c5_row49_col3"></td>
+<td class="data row49 col4" id="T_166c5_row49_col4">90.93</td>
+<td class="data row49 col5" id="T_166c5_row49_col5">105.79</td>
+<td class="data row49 col6" id="T_166c5_row49_col6">78.31</td>
+<td class="data row49 col7" id="T_166c5_row49_col7">86.17</td>
+<td class="data row49 col8" id="T_166c5_row49_col8">59.41</td>
+<td class="data row49 col9" id="T_166c5_row49_col9">2.02</td>
+<td class="data row49 col10" id="T_166c5_row49_col10">102.81</td>
+<td class="data row49 col11" id="T_166c5_row49_col11">74.62</td>
+<td class="data row49 col12" id="T_166c5_row49_col12">80.63</td>
+<td class="data row49 col13" id="T_166c5_row49_col13">175.87</td>
+</tr>
+<tr>
+<th class="row_heading level0 row50" id="T_166c5_level0_row50">50</th>
+<td class="data row50 col0" id="T_166c5_row50_col0"></td>
+<td class="data row50 col1" id="T_166c5_row50_col1">MINIMUM</td>
+<td class="data row50 col2" id="T_166c5_row50_col2"></td>
+<td class="data row50 col3" id="T_166c5_row50_col3"></td>
+<td class="data row50 col4" id="T_166c5_row50_col4">83.80</td>
+<td class="data row50 col5" id="T_166c5_row50_col5">86.93</td>
+<td class="data row50 col6" id="T_166c5_row50_col6">74.77</td>
+<td class="data row50 col7" id="T_166c5_row50_col7">79.78</td>
+<td class="data row50 col8" id="T_166c5_row50_col8">30.90</td>
+<td class="data row50 col9" id="T_166c5_row50_col9">0.53</td>
+<td class="data row50 col10" id="T_166c5_row50_col10">92.97</td>
+<td class="data row50 col11" id="T_166c5_row50_col11">64.11</td>
+<td class="data row50 col12" id="T_166c5_row50_col12">75.29</td>
+<td class="data row50 col13" id="T_166c5_row50_col13">87.07</td>
+</tr>
+<tr>
+<th class="row_heading level0 row51" id="T_166c5_level0_row51">51</th>
+<td class="data row51 col0" id="T_166c5_row51_col0"></td>
+<td class="data row51 col1" id="T_166c5_row51_col1">MAXIMUM</td>
+<td class="data row51 col2" id="T_166c5_row51_col2"></td>
+<td class="data row51 col3" id="T_166c5_row51_col3"></td>
+<td class="data row51 col4" id="T_166c5_row51_col4">101.67</td>
+<td class="data row51 col5" id="T_166c5_row51_col5">121.31</td>
+<td class="data row51 col6" id="T_166c5_row51_col6">81.80</td>
+<td class="data row51 col7" id="T_166c5_row51_col7">93.38</td>
+<td class="data row51 col8" id="T_166c5_row51_col8">77.72</td>
+<td class="data row51 col9" id="T_166c5_row51_col9">5.25</td>
+<td class="data row51 col10" id="T_166c5_row51_col10">116.50</td>
+<td class="data row51 col11" id="T_166c5_row51_col11">77.43</td>
+<td class="data row51 col12" id="T_166c5_row51_col12">85.09</td>
+<td class="data row51 col13" id="T_166c5_row51_col13">242.20</td>
+</tr>
+</tbody>
+</table></div></section>
+<section id="excluded"><h3>Excluded instrument sessions (Code Cell 43)</h3><p>Three excluded sessions, all from instrument 3080884, with 121, 125, and 124 readings respectively. The field-note text is truncated with ellipses in the notebook's saved output; the original untruncated notes are not recoverable from this display alone.</p><div class="table-scroll" id="excludedTable"><table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>Instrument ID</th>
+<th>Session ID</th>
+<th>Readings</th>
+<th>Field Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>3080884</td>
+<td>Session - Sep 14, 2026 10:02:25 AM</td>
+<td>121</td>
+<td>In full sunlight, light pedestrian traffic, mi...</td>
+</tr>
+<tr>
+<th>1</th>
+<td>3080884</td>
+<td>Session - Sep 14, 2026 10:21:07 AM</td>
+<td>125</td>
+<td>No pedestrian traffic, direct sunlight, limite...</td>
+</tr>
+<tr>
+<th>2</th>
+<td>3080884</td>
+<td>Session - Sep 14, 2026 9:44:00 AM</td>
+<td>124</td>
+<td>Under tree shade; medium pedestrian traffic in...</td>
+</tr>
+</tbody>
+</table></div></section>
+</article></main><footer>Source: Executed notebook outputs · <a href="https://github.com/robert-z-lehr/UT-Campus-Heat-Mapping-Shade-and-Walkability---Notebook-Analyses">GitHub repository</a></footer><script>const input=document.getElementById('searchTable'),rows=[...document.querySelectorAll('#sessionTable tbody tr')];input.addEventListener('input',()=>{const q=input.value.toLowerCase();let visible=0;for(const r of rows){r.hidden=!r.innerText.toLowerCase().includes(q);visible+=!r.hidden;}document.getElementById('rowCount').textContent=visible+' of '+rows.length+' rows';});</script></body></html>
